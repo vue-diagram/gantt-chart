@@ -1,10 +1,11 @@
 <template>
 <div class='BodyB'>
-    <h1>{{msg}}</h1>
-    <p><button v-on:click="count++">Счётчик кликов — {{ count }}</button></p>
+    <hr>
     <p>
      Hello! This is BodyB!
     </p>
+    <h1>{{msg}}</h1>
+    <p><button @click="count++">Счётчик кликов — {{ count }}</button></p>
     <p>
     Количество кликов из BodyA: {{msgdata}}
     </p>
@@ -12,7 +13,6 @@
     Сумма из BodyA: {{msgdata2}}
     </p>
     <button @click="trans(msgdata2)">Click me!</button>
-    <img alt="Vue logo" src="@/assets/logo.png">
 </div>
 </template>
 
@@ -20,15 +20,7 @@
 
 export default {
   name: 'BodyB',
-  props: [
-  'msg',
-  'msgdata',
-  'msgdata2'
-  ], /* {
-    msg: String,
-    msgdata: Number,
-    msgdata2: Number
-  }, */
+  props: ['msg', 'msgdata', 'msgdata2'],
   data: function () {
     return {
       count: 0

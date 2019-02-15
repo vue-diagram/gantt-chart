@@ -21,3 +21,5 @@ yarn-error.log*
 *.sw*
 
 \.directory
+
+package-lock\.json

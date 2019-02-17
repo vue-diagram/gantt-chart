@@ -1,6 +1,7 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 import Home from './views/Home'
+import Grid from './views/GridBox'
 import sandbox from './components/sandbox/HelloWorldArturKe'
 
 Vue.use(Router)
@@ -27,6 +28,12 @@ export default new Router({
         msg: 'Hey, ArturKe! :)'
       },
       component: sandbox
+    },
+    // Страница с grid разметкой
+    {
+      path: '/grid',
+      name: 'grid',
+      component: Grid
     }
   ]
 })
